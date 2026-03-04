@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Campus Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+
+    <!-- PAGE # 1-->
+
+<div class="container">
+    <div class="portal-header">
+    <img src="smit.logo.png" alt="Logo" class="portal-logo">
+    <h1>Campus Portal</h1>
+</div>
+
+
+    <!-- Left Section -->
+    <div class="left">
+        <h1>Campus Portal</h1>
+        <p>Manage reports, complaints <br> & events in one place.</p>
+    </div>
+
+    <!-- Right Section -->
+    <div class="right">
+        <div class="login-box">
+            <h2>Login</h2>
+
+            <label>Email</label>
+            <input type="email" placeholder="Enter your email">
+
+            <label>Password</label>
+            <input type="password" placeholder="Enter your password">
+
+            <div class="role-btns">
+                <button>Student</button>
+                <button>Admin</button>
+            </div>
+
+            <button class="login-btn">Log In</button>
+
+            <div class="google-btn">
+                <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png" alt="Google">
+                <span>Sign in with Google</span>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<!-- PAGE # 2-->
+ <div class="dashboard-container">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+
+        <div class="sidebar-logo">
+            <img src="smit.logo.png" alt="Logo">
+            <h3>Campus Portal</h3>
+        </div>
+
+        <ul>
+            <li class="active">Dashboard</li>
+            <li>Lost & Found</li>
+            <li>Complaints</li>
+            <li>Volunteers</li>
+            <li>Notifications</li>
+        </ul>
+
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+
+        <h2>Lost & Found Report</h2>
+
+        <!-- Cards -->
+        <div class="cards">
+
+            <div class="card">
+                <h4>Total Reports</h4>
+                <p>128</p>
+            </div>
+
+            <div class="card">
+                <h4>Active Complaints</h4>
+                <p>5</p>
+            </div>
+
+            <div class="card">
+                <h4>Items Matched</h4>
+                <p>12</p>
+            </div>
+
+            <div class="card">
+                <h4>Events Registered</h4>
+                <p>8</p>
+            </div>
+
+        </div>
+
+        <!-- Recent Activity -->
+        <div class="activity">
+            <h3>Recent Activity</h3>
+
+            <div class="activity-item">
+                <span>Phone</span>
+                <span class="status pending">Pending</span>
+            </div>
+
+            <div class="activity-item">
+                <span>Backpack</span>
+                <span class="status found">Found</span>
+            </div>
+
+            <div class="activity-item">
+                <span>Wallet</span>
+                <span class="status matching">Matching</span>
+            </div>
+        </div>
+
+        <!-- Buttons -->
+        <div class="buttons">
+            <button class="green-btn">Report Lost Item</button>
+            <button class="blue-btn">Submit Complaint</button>
+            <button class="orange-btn">Register For Event</button>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- PAGE # 3-->
+
+<div class="wrapper"></div>
+
+    <h2>Submit Complaint</h2>
+
+    <!-- Big Banner -->
+    <div class="banner">
+        <div class="banner-content">
+            <h3>Community Cleanup</h3>
+            <p>Saturday, 24th June</p>
+            <button>City Park</button>
+        </div>
+    </div>
+
+    <!-- Event Cards -->
+    <div class="cards">
+
+        <div class="card">
+            <img src="work.web.jpeg" alt="">
+            <div class="card-body">
+                <h4>Tech Workshop</h4>
+                <p>June 5</p>
+                <button class="green-btn">Register</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1526256262350-7da7584cf5eb" alt="">
+            <div class="card-body">
+                <h4>Health Camp</h4>
+                <p>July 5</p>
+                <button class="green-btn">Register</button>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<!--PAGE # 4-->
+
+div class="container">
+
+    <h2>Submit Complaint</h2>
+
+    <!-- Complaint Form -->
+    <div class="form-box">
+
+        <label>Complaint Title</label>
+        <input type="text">
+
+        <label>Category</label>
+        <select>
+            <option>Backpacks</option>
+            <option>Electronics</option>
+            <option>Other</option>
+        </select>
+
+        <label>Description</label>
+        <textarea rows="4"></textarea>
+
+        <label>Location</label>
+        <select>
+            <option>City Park</option>
+            <option>Near Dean</option>
+        </select>
+
+        <div class="urgency">
+            <span>Urgency</span>
+            <label><input type="radio" name="u"> Low</label>
+            <label><input type="radio" name="u"> Medium</label>
+            <label><input type="radio" name="u"> High</label>
+        </div>
+
+        <button class="submit-btn">Submit Complaint</button>
+
+    </div>
+
+    <!-- My Complaints Table -->
+    <div class="table-section">
+
+        <h3>My Complaints</h3>
+
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Complaints</th>
+                <th>Location</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+
+            <tr>
+                <td>503</td>
+                <td>Wi-Fi Not Working</td>
+                <td>Dr Neant</td>
+                <td><span class="pending">Pending</span></td>
+                <td>...</td>
+            </tr>
+
+            <tr>
+                <td>504</td>
+                <td>Leaky Pipe</td>
+                <td>City Park</td>
+                <td><span class="resolved">Resolved</span></td>
+                <td>...</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+</div>
+<!-- PAGE # 5-->
+
+<div class="container">
+
+    <h2>Admin Dashboard</h2>
+
+    <!-- Top Cards -->
+    <div class="cards">
+
+        <div class="card">
+            <h3>540</h3>
+            <p>Total Users</p>
+        </div>
+
+        <div class="card">
+            <h3>12</h3>
+            <p>Open Complaints</p>
+        </div>
+
+        <div class="card">
+            <h3>6</h3>
+            <p>Lost Items Pending</p>
+        </div>
+
+        <div class="card">
+            <h3>24</h3>
+            <p>Active Volunteers</p>
+        </div>
+
+    </div>
+
+    <!-- Bottom Section -->
+    <div class="bottom-section">
+
+        <!-- Complaints Table -->
+        <div class="table-box">
+            <h3>Complaints Management</h3>
+
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Category</th>
+                    <th>Location</th>
+                    <th>Status</th>
+                </tr>
+
+                <tr>
+                    <td>506</td>
+                    <td>Olise Muller</td>
+                    <td>Complaints</td>
+                    <td>In Campus</td>
+                    <td><span class="active">Active</span></td>
+                </tr>
+
+                <tr>
+                    <td>502</td>
+                    <td>Maya Ripley</td>
+                    <td>Sanitation</td>
+                    <td>Park</td>
+                    <td><span class="pending">Pending</span></td>
+                </tr>
+
+                <tr>
+                    <td>503</td>
+                    <td>Wiose Fendy</td>
+                    <td>Facility</td>
+                    <td>Office</td>
+                    <td><span class="resolved">Resolved</span></td>
+                </tr>
+
+                <tr>
+                    <td>508</td>
+                    <td>New Vendor</td>
+                    <td>Lost & Found</td>
+                    <td>Store</td>
+                    <td><span class="active">Active</span></td>
+                </tr>
+
+            </table>
+        </div>
+
+        <!-- Notifications -->
+        <div class="notifications">
+            <h3>Notifications</h3>
+
+            <div class="note">Complaint Marked as Resolved</div>
+            <div class="note">Laptop Found: Matches With Your Report</div>
+            <div class="note">Reminder: Event Tomorrow</div>
+            <div class="note">New Request</div>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+</div>
+<script>
+</script>
+
+
+</body>
+</html>
